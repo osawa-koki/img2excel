@@ -25,7 +25,7 @@ try
   }
 
   logger.Info("実行開始");
-  MainStream();
+  MainStream(args);
   logger.Info("実行完了");
   return 0;
 }
