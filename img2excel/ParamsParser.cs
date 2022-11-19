@@ -1,9 +1,8 @@
 
 using Microsoft.Extensions.Configuration;
 using NLog;
-using static Program;
 
-internal class ParamsParser
+internal static partial class Program
 {
   internal static string target_img_file = "";
   internal static string target_excel_file = "";
