@@ -5,8 +5,8 @@ using static Program;
 
 internal class ParamsParser
 {
-  static string target_img_file = "";
-  static string target_excel_file = "";
+  internal static string target_img_file = "";
+  internal static string target_excel_file = "";
   
   internal static bool Parse(string[] args)
   {

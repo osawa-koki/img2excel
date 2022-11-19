@@ -11,5 +11,12 @@ internal static partial class Program
       logger.Warn("パラメータの解析に失敗しました。");
       return;
     }
+
+    var target_img_file = ParamsParser.target_img_file;
+    if (File.Exists(target_img_file) == false)
+    {
+      logger.Warn($"対象画像ファイル({target_img_file})が存在しません。");
+      return;
+    }
   }
 }
