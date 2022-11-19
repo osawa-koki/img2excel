@@ -5,7 +5,7 @@ using NLog;
 internal static partial class Program
 {
   internal static string target_img_file = "";
-  internal static string target_excel_file = "";
+  internal static string output_excel_file = "";
   
   internal static bool Parse(string[] args)
   {
@@ -33,7 +33,7 @@ internal static partial class Program
 
       // コマンドラインが正常なら、パラメータを設定する
 
-      target_excel_file = tmp_target_excel_file;
+      output_excel_file = tmp_target_excel_file;
       target_img_file = tmp_target_img_file;
 
       return true;
