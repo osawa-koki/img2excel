@@ -4,7 +4,7 @@ string mutexName = "img2excel";
 Mutex mutex = new(false, mutexName);
 bool hasHandle = false;
 
-#if DEBUG
+#if !DEBUG
 try
 {
 #endif
@@ -31,7 +31,7 @@ try
   MainStream(args);
   logger.Info("実行完了");
   return 0;
-#if DEBUG
+#if !DEBUG
 }
 catch (Exception ex)
 {
