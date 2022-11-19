@@ -36,7 +36,7 @@ internal static partial class Program
     IXLWorksheet sheet = book.Worksheets.Add("Sheet1");
 
     // 行の高さをまとめて変更する。
-    sheet.Rows(1, width).Height = 3.5;
+    sheet.Rows(1, width).Height = 4.5;
     // 列の幅をまとめて変更する。
     sheet.Columns(1, height).Width = 0.1;
 
