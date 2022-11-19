@@ -2,7 +2,7 @@
 
 画像ファイルをExcelファイルに変換します。  
 
-![サンプル画像](docs/img/fruits.gif)  
+![サンプル画像](./docs/img/fruits.gif)  
 
 ## 使用した画像ファイル
 
