@@ -3,6 +3,9 @@
     "img2excel": {
       "commandName": "Project",
       "commandLineArgs": "/t target.png\r\n/o output.xlsx"
+    },
+    "Docker": {
+      "commandName": "Docker"
     }
   }
 }
