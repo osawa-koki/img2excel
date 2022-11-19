@@ -3,8 +3,11 @@ string mutexName = "img2excel";
 
 Mutex mutex = new(false, mutexName);
 bool hasHandle = false;
+
+#if DEBUG
 try
 {
+#endif
   try
   {
     // ミューテックスの所有権を要求する
@@ -28,6 +31,7 @@ try
   MainStream(args);
   logger.Info("実行完了");
   return 0;
+#if DEBUG
 }
 catch (Exception ex)
 {
@@ -43,3 +47,4 @@ finally
   }
   mutex.Close();
 }
+#endif
