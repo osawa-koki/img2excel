@@ -36,18 +36,18 @@ internal static partial class Program
     IXLWorksheet sheet = book.Worksheets.Add("Sheet1");
 
     // 行の高さをまとめて変更する。
-    sheet.Rows(1, width).Height = 1;
+    sheet.Rows(1, width).Height = 3.5;
     // 列の幅をまとめて変更する。
-    sheet.Columns(1, height).Width = 7.5;
+    sheet.Columns(1, height).Width = 0.1;
 
-    for (int x = 0; x < width; x++)
+    for (int x = 1; x <= width; x++)
     {
-      for (int y = 0; y < height; y++)
+      for (int y = 1; y <= height; y++)
       {
-        Color color = bitmap.GetPixel(x, y);
+        Color color = bitmap.GetPixel(x - 1, y - 1);
         string hex = color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
-        sheet.Cell(x, y).Value = hex;
-        sheet.Cell(x, y).Style.Fill.BackgroundColor = XLColor.FromHtml($"#{hex}");
+        // sheet.Cell(y, x).Value = hex;
+        sheet.Cell(y, x).Style.Fill.BackgroundColor = XLColor.FromHtml($"#{hex}");
       }
     }
 
