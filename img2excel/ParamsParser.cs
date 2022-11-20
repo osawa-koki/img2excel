@@ -22,12 +22,12 @@ internal static partial class Program
 
       if (tmp_target_img_file == null)
       {
-        logger.Warn("-tオプションで対象画像ファイルパスを指定して下さい。");
+        logger.Warn("「/t」オプションで対象画像ファイルパスを指定して下さい。");
         return false;
       }
       if (tmp_target_excel_file == null)
       {
-        logger.Warn("-oオプションで出力先Excelファイルパスを指定して下さい。");
+        logger.Warn("「/b」オプションで出力先Excelブックパスを指定して下さい。");
         return false;
       }
 
