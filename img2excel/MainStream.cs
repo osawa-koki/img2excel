@@ -15,12 +15,6 @@ internal static partial class Program
       return;
     }
 
-    if (File.Exists(target_img_file) == false)
-    {
-      logger.Warn("対象画像ファイルが存在しません。");
-      return;
-    }
-
     logger.Info($"画像ファイル({target_img_file})の解析を開始します。");
 
     // エクセル関連
@@ -29,10 +23,15 @@ internal static partial class Program
     XLWorkbook book = File.Exists(output_excel_file) ? new(output_excel_file) : new();
 
     // 対象の画像一覧を取得する。
-    var target_imgs = Directory.GetFiles("", Path.GetFileNameWithoutExtension(target_img_file));
+    var target_imgs = Directory.GetFiles("./", target_img_file);
 
+    logger.Info($"画像ファイル({target_img_file.Length}件)の解析を開始します。");
+    target_imgs.ToList().ForEach(a => logger.Info($"{a}"));
+    
     foreach (var target_img in target_imgs)
     {
+      logger.Info($"画像ファイル({target_img})の解析を開始します。");
+
       Bitmap bitmap = new(target_img);
       int width = bitmap.Width;
       int height = bitmap.Height;
@@ -58,10 +57,16 @@ internal static partial class Program
           sheet.Cell(y, x).Style.Fill.BackgroundColor = XLColor.FromHtml($"#{hex}");
         }
       }
+
+      logger.Info($"画像ファイル({target_img})の解析を終了します。");
     }
+
+    logger.Info($"Excelファイルの生成を開始します。数分かかることがあります・");
 
     // Excelブックを保存保存する。
     book.SaveAs(output_excel_file);
+    
+    logger.Info($"Excelファイルの生成が完了しました。");
   }
 }
 

@@ -18,7 +18,7 @@ internal static partial class Program
       var config = builder.Build();
 
       var tmp_target_img_file = config["t"];
-      var tmp_target_excel_file = config["o"];
+      var tmp_target_excel_file = config["b"];
 
       if (tmp_target_img_file == null)
       {

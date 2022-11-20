@@ -2,7 +2,7 @@
   "profiles": {
     "img2excel": {
       "commandName": "Project",
-      "commandLineArgs": "/t target.png\r\n/o output.xlsx"
+      "commandLineArgs": "/t *.png\r\n/b animal.xlsx\r\n"
     },
     "Docker": {
       "commandName": "Docker"
