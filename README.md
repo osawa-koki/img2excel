@@ -13,10 +13,20 @@
 ## 使い方
 
 ```shell
-./img2excel.exe /t 対象画像ファイルパス /o 出力先ファイル名
-./img2excel.exe /t tako.png /o tako.xlsx
-./img2excel.exe /t tanuki.png /o tanuki.xlsx
-./img2excel.exe /t suzume.png /o suzume.xlsx
+./img2excel.exe /t 対象画像ファイルパス /b 出力先ファイル名
+
+# One By One
+./img2excel.exe /t tako.png /b tako.xlsx
+./img2excel.exe /t tanuki.png /b tanuki.xlsx
+./img2excel.exe /t suzume.png /b suzume.xlsx
+
+# Unixオペレーティングシステムでのワイルドカードを使用可能です。
+
+# 全てのPNGファイルを対象
+./img2excel.exe /t *.png /b animal.xlsx
+
+# 5文字の名前のファイルを対象
+./img2excel.exe /t ?????.png /b pokemon.xlsx
 ```
 
 <!-- https://www.youtube.com/watch?v=2PMSwTQXYnk -->
