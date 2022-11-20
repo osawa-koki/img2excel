@@ -61,7 +61,7 @@ internal static partial class Program
       logger.Info($"画像ファイル({target_img})の解析を終了します。");
     }
 
-    logger.Info($"Excelファイルの生成を開始します。数分かかることがあります・");
+    logger.Info($"Excelファイルの生成を開始します。数分かかることがあります。");
 
     // Excelブックを保存保存する。
     book.SaveAs(output_excel_file);
