@@ -1,6 +1,9 @@
 # img2excel
 
 画像ファイルをExcelファイルに変換します。  
+<https://github.com/osawa-koki/excel2img>プロジェクトの兄弟プロジェクト。
+
+お遊びプロジェクト。
 
 ![サンプル画像](./docs/img/fruits.gif)  
 
