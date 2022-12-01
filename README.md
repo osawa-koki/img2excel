@@ -32,4 +32,6 @@
 ./img2excel.exe /t ?????.png /b pokemon.xlsx
 ```
 
-<!-- https://www.youtube.com/watch?v=2PMSwTQXYnk -->
+## その他
+
+- [youtube](https://www.youtube.com/watch?v=2PMSwTQXYnk)
