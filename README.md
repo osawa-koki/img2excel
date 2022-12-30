@@ -1,5 +1,9 @@
 # img2excel
 
+> **Warning**
+> [Webサービス版](https://github.com/osawa-koki/img2excel-server)へ移行しました。  
+> 処理内容としてはほとんど同じですが、.NETで非推奨となったBitmapクラスの代わりに[ImageSharp](https://sixlabors.com/products/imagesharp/)を使用しています。  
+
 画像ファイルをExcelファイルに変換します。  
 
 ![サンプル画像](./docs/img/fruits.gif)  
