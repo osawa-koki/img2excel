@@ -5,6 +5,9 @@
 > 処理内容としてはほとんど同じですが、.NETで非推奨となったBitmapクラスの代わりに[ImageSharp](https://sixlabors.com/products/imagesharp/)を使用しています。  
 
 画像ファイルをExcelファイルに変換します。  
+<https://github.com/osawa-koki/excel2img>プロジェクトの兄弟プロジェクト。
+
+お遊びプロジェクト。
 
 ![サンプル画像](./docs/img/fruits.gif)  
 
@@ -33,4 +36,6 @@
 ./img2excel.exe /t ?????.png /b pokemon.xlsx
 ```
 
-<!-- https://www.youtube.com/watch?v=2PMSwTQXYnk -->
+## その他
+
+- [youtube](https://www.youtube.com/watch?v=2PMSwTQXYnk)
